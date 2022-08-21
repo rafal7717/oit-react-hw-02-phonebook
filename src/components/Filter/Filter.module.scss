@@ -1,0 +1,27 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  font-size: 16px;
+}
+
+.input {
+  font-size: 14px;
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid gray;
+  outline: none;
+  line-height: 1.25;
+
+  &:hover {
+    border-color:rgb(80, 80, 80);
+  }
+
+  &:focus {
+    border-color:rgb(45, 159, 163);
+    box-shadow: 0px 0px 4px 0px rgba(45, 159, 163,0.7);
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(45, 159, 163,0.7);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(45, 159, 163,0.7);
+    transition: border-color 600ms, box-shadow 600ms;
+  }
+}
